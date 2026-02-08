@@ -1,0 +1,41 @@
+/*Adapted from https://app.rize.education/courses/8156/resource/e0da41f6-c609-4731-b16d-0db39a5cfa0c?weekId=10972 */
+/* ProductCard.css */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin-bottom: 16px;
+    padding: 16px;
+    width: 600px;
+}
+
+.product-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.image {
+
+    margin: 12px;
+}
+
+.product-name {
+    font-weight: 600;
+    margin: 0;
+}
+
+.product-price {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.product-description {
+    margin: 16px 0;
+    line-height: 1.5;
+}
+
+
+
+
