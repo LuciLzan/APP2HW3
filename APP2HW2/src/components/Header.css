@@ -1,44 +1,72 @@
-/* Via: https://app.rize.education/courses/8156/resource/e0da41f6-c609-4731-b16d-0db39a5cfa0c?weekId=10972 /*
-/* Header.css */
+/*VIA ChatGPT
+ Header.css */
+
 .app-header {
-    background: white;
-    border-bottom: 1px solid #dbdbdb;
-    padding: 0 20px;
-    height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 64px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+/* Logo */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
     margin: 0;
 }
 
+/* Navigation */
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #262626;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    color: #0095f6;
+    color: #2563eb;
 }
 
-.post-btn {
-    background: #0095f6;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
+/* Cart */
+.cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
-.post-btn:hover {
-    background: #0086e0;
+.cart-icon {
+    font-size: 1.5rem;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 999px;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
 }
